@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const Page = require('./helpers/Page');
 
 let page;
@@ -30,3 +31,4 @@ test('When signed in, shows logout button', async () => {
 
     expect(text).toEqual('Logout');
 })
+
