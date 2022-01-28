@@ -9,12 +9,16 @@ class BlogShow extends Component {
 
 
   renderImage() {
-    const { imageUrl } = this.props;
+    const { imageUrl } = this.props.blog;
 
+    console.log(`https://asmovic-adv-ci-blog.s3.amazonaws.com/${imageUrl}`);
+    debugger;
     if (imageUrl) {
-      return <image src={`${imageUrl}`} />
+      /* return <img src={`https://asmovic-advanced-blog.s3.us-east-2.amazonaws.com/${imageUrl}`} /> */
+      console.log('uploading your image')
+      return <img style={{ width: '30%' }} src={`https://asmovic-adv-ci-blog.s3.amazonaws.com/${imageUrl}`} />
     }
-    return 'No Image';
+
   }
   render() {
     if (!this.props.blog) {

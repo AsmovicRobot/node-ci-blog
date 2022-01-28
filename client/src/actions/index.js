@@ -15,9 +15,7 @@ export const handleToken = token => async dispatch => {
 
 export const submitBlog = (values, file, history) => async dispatch => {
   const uploadConfig = await axios.get('/api/upload');
-  debugger;
-  console.log('uploading...', file);
-
+  console.log('uploadConfig.............', uploadConfig);
 
   await axios.put(uploadConfig.data.url, file, {
     headers: {

@@ -5,6 +5,6 @@ module.exports = {
   mongoURI: "mongodb://asmovic:asmovic007@cluster0-shard-00-00.nw8fv.mongodb.net:27017,cluster0-shard-00-01.nw8fv.mongodb.net:27017,cluster0-shard-00-02.nw8fv.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-zi1iyt-shard-0&authSource=admin&retryWrites=true&w=majority",
   cookieKey: '123123123',
   redisURL: 'redis://127.0.0.1:6379',
-  accessKeyId: 'AKIAVIRWWP2PYRAARRAG',
-  secretAccessKey: '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'
+  accessKeyId: 'AKIAVIRWWP2PUO76JOWD',
+  secretAccessKey: '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'
 };
